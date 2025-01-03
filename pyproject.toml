@@ -46,13 +46,20 @@ test = [
     "shellcheck-py==0.9.0.2"
 ]
 
+[project.dependencies]
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+statsmodels = "*"
+yfinance = "*"
+
 [project.urls]
 Documentation = "https://github.com/microsoft/python-package-template/tree/main#readme"
 Source = "https://github.com/microsoft/python-package-template"
 Tracker = "https://github.com/microsoft/python-package-template/issues"
 
 [tool.flit.module]
-name = "python_package"
+name = "py-trading-gpt"
 
 [tool.bandit]
 exclude_dirs = ["build","dist","tests","scripts"]
