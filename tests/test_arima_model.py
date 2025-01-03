@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from py-trading-gpt.arima_model import perform_arima_analysis
+from py_trading_gpt.arima_model import perform_arima_analysis
 
 def test_arima_analysis():
     ticker = 'AAPL'
