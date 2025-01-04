@@ -7,6 +7,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import yfinance as yf
 
 
+
 def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast_steps: int):
     try:
         # Step 1: Data Collection
@@ -18,10 +19,7 @@ def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast
         result = adfuller(data)
         print(f"ADF Statistic: {result[0]}")
         print(f"p-value: {result[1]}")
-
-        # Differencing if non-stationary
-        data_diff = data.diff().dropna() if result[1] > 0.05 else data
-
+    data_diff = data.diff().dropna() if result[1] > 0.05 else data
         # Step 3: Model Identification
         # Plot ACF and PACF
         fig, axes = plt.subplots(1, 2, figsize=(16, 4))
@@ -29,6 +27,7 @@ def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast
         plot_pacf(data_diff, ax=axes[1])
         plt.show()
 
+    plt.close()
         # Determine ARIMA parameters programmatically
         p = len([i for i in plot_pacf(data_diff, lags=20).values if i > 0.2])
         q = len([i for i in plot_acf(data_diff, lags=20).values if i > 0.2])
