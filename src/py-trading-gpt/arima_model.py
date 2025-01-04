@@ -7,7 +7,6 @@ from statsmodels.tsa.arima.model import ARIMA
 import yfinance as yf
 
 
-
 def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast_steps: int):
     try:
         # Step 1: Data Collection
