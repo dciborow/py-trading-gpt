@@ -19,7 +19,8 @@ def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast
         result = adfuller(data)
         print(f"ADF Statistic: {result[0]}")
         print(f"p-value: {result[1]}")
-    data_diff = data.diff().dropna() if result[1] > 0.05 else data
+        data_diff = data.diff().dropna() if result[1] > 0.05 else data
+
         # Step 3: Model Identification
         # Plot ACF and PACF
         fig, axes = plt.subplots(1, 2, figsize=(16, 4))
