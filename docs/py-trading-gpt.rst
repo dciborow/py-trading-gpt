@@ -1,4 +1,4 @@
-python\_package package
+py-trading-gpt package
 =======================
 
 Subpackages
@@ -7,15 +7,15 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   python_package.hello_world
+   py-trading-gpt.hello_world
 
 Submodules
 ----------
 
-python\_package.setup module
+py-trading-gpt.setup module
 ----------------------------
 
-.. automodule:: python_package.setup
+.. automodule:: py-trading-gpt.setup
    :members:
    :undoc-members:
    :show-inheritance:
@@ -23,7 +23,7 @@ python\_package.setup module
 Module contents
 ---------------
 
-.. automodule:: python_package
+.. automodule:: py-trading-gpt
    :members:
    :undoc-members:
    :show-inheritance:
