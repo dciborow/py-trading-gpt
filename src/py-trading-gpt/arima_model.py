@@ -28,7 +28,8 @@ def perform_arima_analysis(ticker: str, start_date: str, end_date: str, forecast
         plot_pacf(data_diff, ax=axes[1])
         plt.show()
 
-    plt.close()
+        plt.close()
+
         # Determine ARIMA parameters programmatically
         p = len([i for i in plot_pacf(data_diff, lags=20).values if i > 0.2])
         q = len([i for i in plot_acf(data_diff, lags=20).values if i > 0.2])
