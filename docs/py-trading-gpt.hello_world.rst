@@ -1,13 +1,13 @@
-python\_package.hello\_world package
+py-trading-gpt.hello_world package
 ====================================
 
 Submodules
 ----------
 
-python\_package.hello\_world.hello\_world module
+py-trading-gpt.hello_world.hello_world module
 ------------------------------------------------
 
-.. automodule:: python_package.hello_world.hello_world
+.. automodule:: py-trading-gpt.hello_world.hello_world
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ python\_package.hello\_world.hello\_world module
 Module contents
 ---------------
 
-.. automodule:: python_package.hello_world
+.. automodule:: py-trading-gpt.hello_world
    :members:
    :undoc-members:
    :show-inheritance:

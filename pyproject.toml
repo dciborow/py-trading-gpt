@@ -3,7 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name =  "py-project-toml"
+name =  "py-trading-gpt"
 authors = [
     {name = "Daniel Ciborowski", email = "dciborow@microsoft.com"},
 ]
@@ -21,6 +21,13 @@ classifiers = [
 ]
 requires-python = ">=3.8.1"
 dynamic = ["version"]
+dependencies = [
+    "pandas==2.2.3",
+    "numpy>=2.2.1",
+    "matplotlib==3.10.0",
+    "statsmodels==0.14.4",
+    "yfinance==0.2.51"
+]
 
 [project.optional-dependencies]
 spark = [
@@ -52,7 +59,7 @@ Source = "https://github.com/microsoft/python-package-template"
 Tracker = "https://github.com/microsoft/python-package-template/issues"
 
 [tool.flit.module]
-name = "python_package"
+name = "py-trading-gpt"
 
 [tool.bandit]
 exclude_dirs = ["build","dist","tests","scripts"]
